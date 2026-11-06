@@ -286,7 +286,7 @@
           "agent_runtime": {
             "agent_id": "standard",
             "agent_resolution": {
-              "digest": "43afdd5907b93b0a035229749853291031c92437239c5bcf49cbcd6fe5334ea3",
+              "digest": "353d5928ee13c541fd6f3e8d43ac403e14e391a4f84f70a7a5f70e296a30a9c7",
               "flow": {
                 "id": "react",
                 "options": {}
@@ -305,7 +305,6 @@
               ],
               "ref": "clio/standard"
             },
-            "commands": [],
             "execution_mode": "flow_react",
             "fanout": {},
             "kind": "dynamic_agent",
