@@ -237,7 +237,9 @@ from clio_agent.gact.app import build_app
 # /v1/artifacts/{id}/latex and GET /v1/artifacts/{id}/latex/locate.
 # 436 -> 439: streams and live sources (taskable run_code plan): GET /v1/streams/{id},
 # /v1/artifacts/{id}/table-query by latest, and the stream watch route.
-EXPECTED_ROUTE_METHOD_PAIRS = 439
+# 439 -> 437: an agent's MCP prompts are commands over its own connection (direct
+# summoning plan), so GET /v1/mcp/servers/{sid}/prompts and POST .../prompts/get go.
+EXPECTED_ROUTE_METHOD_PAIRS = 437
 
 # app.py is build_app + lifecycle + re-export shims only. The ceiling is
 # the current size (~2892 lines) plus ~300 lines of headroom so ordinary
